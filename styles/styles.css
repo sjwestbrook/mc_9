@@ -63,16 +63,16 @@ body {
 #chat .bubble .client {
   float: right;
 }
-#chat .bubble .client content {
+#chat .bubble .client .content {
   background: #fafbff;
   border-radius: 25px 2px 25px 25px;
   text-align: right;
   float: right;
 }
-#chat .bubble .client content .avatar {
+#chat .bubble .client .content .avatar {
   float: right;
 }
-#chat .bubble .client content .time {
+#chat .bubble .client .content .time {
   text-align: right;
 }
 /* end chat */
