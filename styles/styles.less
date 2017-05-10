@@ -19,4 +19,49 @@
 
 html, body {
   font-family: "Open Sans", sans-serif; 
+  background-color: @bg;
+}
+
+
+/* -------- BUBBLE STYLES -------- */
+
+#chat {
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  .bubble {
+    margin-bottom: 3em;
+    .content {
+      background-color: @white;
+      box-shadow: 0px 9px 30px 0px rgba(44,55,79,0.07);
+      -webkit-box-shadow: 0px 9px 30px 0px rgba(44,55,79,0.07);
+      -moz-box-shadow: 0px 9px 30px 0px rgba(44,55,79,0.07);
+      border-radius: 25px 25px 25px 2px;
+      &::before, &::after {
+        content: "";
+        display: table;
+      }
+      &::after {
+        clear: both; 
+      }
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        overflow: hidden;
+        float: left;
+        margin: 2em;
+        img {
+          height: 100%; 
+        }
+      }
+      .copy {
+        font-size: 1.1em;
+        line-height: 1.75;
+        color: @copy;
+        padding: 1.5em;
+        margin: 0;
+      }
+    }
+  }
 }
