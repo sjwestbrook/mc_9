@@ -46,9 +46,15 @@ body {
   height: 100%;
 }
 #chat .bubble .content .copy {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.75;
   color: #727678;
   padding: 1.5em;
   margin: 0;
+}
+#chat .bubble .time {
+  font-weight: 700;
+  font-size: .8em;
+  clear: both;
+  color: #393f42;
 }
